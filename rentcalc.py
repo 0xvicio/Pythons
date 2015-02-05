@@ -7,7 +7,7 @@ os.system('clear')
 print ("Welcome to Rent Calculator")
 print("==============================")
 print("")
-print("Today is:"), time.strftime("%H/%M/%S")
+print("Today is:"), time.strftime("%m/%d/%y")
 print("")
 
 salary = 0
