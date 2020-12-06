@@ -1,0 +1,31 @@
+#!/usr/bin/python
+import requests
+
+print("""
+ _________         .    .
+(..       \_    ,  |\  /|
+ \       O  \  /|  \ \/ /
+  \______    \/ |   \  / 
+     vvvv\    \ |   /  |
+     \^^^^  ==   \_/   |
+      `\_   ===    \.  |
+      / /\_   \ /      |
+      |/   \_  \|      /
+             \________/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Where is Blahaj?!?
+Tool to find Blahaj virtually everywhere.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Vicio © All Rights fucking reserved.
+MLH 2020 - SharkHacks
+""")
+
+site=input("Please, enter your site: ")
+site = requests.get(site)
+
+if ("blahaj" in site.text):
+    print("Blahaj was found!")
+else:
+    print("Blahaj not found. Explore other waters.")
